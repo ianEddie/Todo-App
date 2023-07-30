@@ -1,0 +1,34 @@
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+
+    main {
+        background-color: #3EECAC;
+        background-image: linear-gradient(19deg, #3EECAC 0%, #EE74E1 100%);
+        
+        @apply w-full min-h-screen flex  flex-col gap-y-1 justify-start items-center font-main py-5
+    }
+
+    header {
+        @apply  flex flex-col items-center w-custom py-5 gap-y-3
+    }
+
+    header>form>input {
+        @apply rounded-3xl flex text-center
+    }
+    footer{
+        @apply bg-neutral-100/50 flex sm:flex-row flex-wrap gap-y-3 justify-around items-center sm:w-custom w-mobile py-5 rounded-xl border border-neutral-300 shadow-xl shadow-black/20
+    }
+
+    .selected {
+        @apply px-2 py-1 rounded-xl border border-neutral-600 shadow-lg shadow-black/10 bg-neutral-900/10 text-neutral-800
+    }
+
+    .noSelected {
+        @apply px-2 py-1 rounded-xl border border-neutral-400
+    }
+
+}
